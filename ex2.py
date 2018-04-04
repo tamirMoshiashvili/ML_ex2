@@ -137,7 +137,7 @@ def cmp_dists(cls, labels, show_results=False):
     # plot results
     if show_results:
         plt.xlabel('x')
-        plt.ylabel('P(x | y=1)')
+        plt.ylabel('P(y=1 | x)')
         plt.plot(inspace, probs_gold, 'b', inspace, probs_pred, 'r')
         plt.legend(('gold', 'pred'))
         plt.show()
